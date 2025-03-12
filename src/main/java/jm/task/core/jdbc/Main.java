@@ -15,16 +15,25 @@ public class Main {
         } else {
             System.out.println("Список пользователей пуст.");
         }
+
         userService = new UserServiceImpl();
+
         userService.createUsersTable();
+
         userService.saveUser("John", "Doe", (byte) 30);
+
         userService.saveUser("Jane", "Smith", (byte) 25);
+
         userService.saveUser("Michael", "Brown", (byte) 40);
+
         userService.saveUser("Emily", "Davis", (byte) 35);
         System.out.println("Список пользователей:");
+
         userService.getAllUsers().forEach(System.out::println);
+
         userService.cleanUsersTable();
         System.out.println("Таблица пользователей очищена");
+
         userService.dropUsersTable();
         System.out.println("Таблица пользователей удалена");
     }
