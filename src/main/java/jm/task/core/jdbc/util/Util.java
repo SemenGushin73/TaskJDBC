@@ -13,7 +13,6 @@ public class Util {
     static {
         try {
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
-
         } catch (SQLException e) {
             e.printStackTrace();
             throw new RuntimeException();

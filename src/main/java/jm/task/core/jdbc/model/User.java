@@ -19,9 +19,7 @@ public class User {
     private Byte age;
 
     public User(long id, String name, String lastName, byte age) {
-
     }
-
 
     @Override
     public String toString() {
